@@ -7,7 +7,7 @@ carrito.map(producto => {
     return 'El producto es' + producto;
 
 });
-
+console.log(producto)
 
 //Objects Keys
 const person = {

@@ -1,5 +1,5 @@
 //Comprenden el codigo cuando se realiza un llamado asyncrono
-//por ejemplo cuando hay un API solo hay 2 opciones succes o error
+//por ejemplo cuando hay un API solo hay 2 opciones success error
 const aplicarDescuento = new Promise((resolve, reject) => {
     setTimeout(() => {
         let descuento = false;
