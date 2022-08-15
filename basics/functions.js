@@ -81,8 +81,10 @@ console.log(viaje);
 const persona = {
     nombre: 'Juan',
     profesion:'Desarrollador web',
-    edad: 500, //tambien cualquier tipo de datos hasta funciones
+    edad: 500, //alterar el  tipo de dato de un atributo/propiedad 
 }
+persona.edad = '';
+
 //tradicional
 let nombrePersona = 'Juan';
 let profesion = 'Desarrollador web';
@@ -166,29 +168,29 @@ const canciones = ["1","2","3"];
 
 
 //forma anterior
-/*
+
 const metallica = {
     banda: banda,
     genero: genero,
     canciones: canciones
 }
 console.log(metallica);
-*/
+
 
 //forma nueva
-const metallica = {banda,genero, canciones};
-console.log(metallica);
+const metallica1 = {banda,genero, canciones};
+console.log(metallica1);
 
 //metodos o funciones en un objeto
 
-
+//Object keys
 const person = {
     nombre: 'Alexis',
     trabajo: 'Desarrollador Web',
     edad: 500,
     musicaTech: true,
-    mostrarInfo() {
-        console.log(`${this.nombre} es ${this.trabajo} y su edad es ${this.edad}`)
+    mostrarInfo() {   //string templates
+        console.log(`${nombre} es ${trabajo} y su edad es ${edad}`) //if this doesnt exist it gonna throws an error
     }
 
 }

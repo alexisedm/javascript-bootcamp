@@ -1,32 +1,28 @@
 class Tarea {
-    constructor(nombre, prioridad){
-        this.nombre = nombre;
-        this.prioridad = prioridad;
+  constructor(nombre, prioridad) {
+    this.nombre = nombre;
+    this.prioridad = prioridad;
+  }
 
-    }
-
-    mostrar(){
-        return `${this.nombre} tiene uan prioridad de ${this.prioridad}`;
-   
-    }
+  mostrar() {
+    return `${this.nombre} tiene uan prioridad de ${this.prioridad}`;
+  }
 }
 
 class ComprasPendientes extends Tarea {
-    constructor(nombre, prioridad, cantidad){
-        super(nombre, prioridad); //referencia constructor padre, puedo heredar utilizar us smetodos tambien
-        this.cantidad = cantidad;
+  constructor(nombre, prioridad, cantidad) {
+    super(nombre, prioridad); //referencia constructor padre, puedo heredar utilizar us smetodos tambien
+    this.cantidad = cantidad;
+  }
 
-    }
-
-    mostrar(){
-        super.mostrar();
-        return `y la cantidad de ${this.cantidad}`;
-    }
-    hola(){
-        return 'Hola';
-    }
+  mostrar() {
+    super.mostrar();
+    return `y la cantidad de ${this.cantidad}`;
+  }
+  hola() {
+    return 'Hola';
+  }
 }
-
 
 //crear objetos
 let tarea1 = new Tarea('Aprender js', 'Alta');
@@ -38,8 +34,6 @@ console.log(tarea1.mostrar());
 console.log(tarea2.mostrar());
 console.log(tarea3.mostrar());
 console.log(tarea4.mostrar());
-
-
 
 //Compras
 let compra1 = new ComprasPendientes('Jabon', 'Urgente', 3);
